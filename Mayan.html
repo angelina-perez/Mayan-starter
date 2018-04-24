@@ -1,0 +1,55 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mayan</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<header>
+<div class="row">
+
+  <div class="logo">
+    <a href="Mayan.html"><img src="mayan.png"><a>
+  </div>
+
+  <ul class="main-nav">
+      <li><a href="men.html">Men</a>
+      <li><a href="women.html">Women</a>
+      <li><a href="accessories.html">Accessories</a>
+      <li><a href="fabrics.html">Fabrics</a>
+      <li><a href="services.html">Services</a>
+      <li><a href="contacts.html">Contacts</a>
+      <li><a href="Espanol.html">Espa&ntilde;ol</a>
+  </ul>
+
+<div class="mine" style="max-width:cover">
+  <img class="mySlides" src="men.jpg" style="width:100%">
+
+</div>
+
+
+  <script>
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000); // Change image every 3 seconds
+  }
+  </script>
+</div>
+</header>
+
+
+</body>
+</html>

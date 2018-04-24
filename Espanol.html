@@ -1,0 +1,56 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mayan</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<header>
+<div class="row">
+
+  <div class="logo">
+    <img src="mayan.png">
+  </div>
+
+  <ul class="main-nav">
+    <li><a href="men.html">Hombres</a>
+    <li><a href="women.html">Mujers</a>
+    <li><a href="accessories.html">Accessorios</a>
+    <li><a href="fabrics.html">Telas</a>
+      <li><a href="contacts.html">Contactos</a>
+      <li><a href="services.html">Servicos</a>
+      <li><a href="Mayan.html">English</a>
+  </ul>
+
+<div class="mine" style="max-width:cover">
+  <img class="mySlides" src="mini.jpg" style="width:100%">
+  <img class="mySlides" src="pine.jpg" style="width:100%">
+  <img class="mySlides" src="wed.jpg" style="width:100%">
+</div>
+
+
+  <script>
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+  }
+  </script>
+</div>
+</header>
+
+
+</body>
+</html>
